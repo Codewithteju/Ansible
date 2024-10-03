@@ -1,0 +1,17 @@
+---
+
+- name: Nginx Installation on Target Server and Running 
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Installation of Nginx on Target Server # Name of the Task
+      apt:                                         # Module Name, Here we can use apt module for installing packages
+        name: nginx                                # Name of the Module we want to Install
+        state: present                             # Install the package
+
+    - name: Running the Nginx Server               # Name of the second Task 2
+      service:                                     # Name of the module
+        name: nginx                                # Package Name
+        service: started                           # Start the package service
+

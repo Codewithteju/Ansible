@@ -1,0 +1,12 @@
+
+########## This is the Inventory file for adding the IP Addresses of Target servers
+
+[Group-Name]
+#IP 1
+#IP 2
+#IP 3
+
+[Group-2]
+#IP 1
+#IP 2
+#IP 3
